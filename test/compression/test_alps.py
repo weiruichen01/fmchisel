@@ -2,7 +2,7 @@ import pytest
 import torch
 from utils import DummyNetwork
 
-from ella.pruning.alps.utils.alps_sparsify import sparsify_weight
+from fmchisel.pruning.alps.utils.alps_sparsify import sparsify_weight
 
 DEV = "cuda:0" if torch.cuda.is_available() else "cpu"
 
