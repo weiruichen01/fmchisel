@@ -3,11 +3,11 @@ import logging
 from llmcompressor.modifiers.factory import ModifierFactory
 
 logger = logging.getLogger(__name__)
-# try:
+try:
 
+    ModifierFactory._EXPERIMENTAL_PACKAGE_PATH = "fmchisel"
+    ModifierFactory.refresh()
+    logger.info("Registered FMCHISEL modifiers successfully.")
 
-ModifierFactory._EXPERIMENTAL_PACKAGE_PATH = "fmchisel"
-ModifierFactory.refresh()
-logger.info("Registered FMCHISEL modifiers successfully.")
-# except ImportError:
-#     logger.info("llmcompressor not detected. FMCHISEL Modifiers will not be registered.")
+except ImportError:
+    logger.info("llmcompressor not detected. FMCHISEL Modifiers will not be registered.")
