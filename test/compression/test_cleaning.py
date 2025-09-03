@@ -4,9 +4,10 @@ import shutil
 
 import pytest
 import torch
-from fmchisel.pruning.osscar.utils.helpers import cleanup_after_prune
 from transformers import AutoModelForCausalLM
 from transformers.models.llama.configuration_llama import LlamaConfig
+
+from fmchisel.pruning.osscar.utils.helpers import cleanup_after_prune
 
 PATH = "./test_model_cleanup"
 

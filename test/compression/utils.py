@@ -4,9 +4,10 @@ from compressed_tensors.quantization.quant_args import (
     QuantizationStrategy,
     QuantizationType,
 )
-from fmchisel.quantization.quantease.utils.quantease_quantize import AllQuantizationArgs
 from llmcompressor.observers.base import Observer
 from torch.nn import Linear
+
+from fmchisel.quantization.quantease.utils.quantease_quantize import AllQuantizationArgs
 
 
 # This returns quantization args

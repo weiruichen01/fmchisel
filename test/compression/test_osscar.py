@@ -1,7 +1,8 @@
 import pytest
 import torch
-from fmchisel.pruning.osscar.utils.osscar_sparsify import sparsify_weight
 from utils import DummyNetwork
+
+from fmchisel.pruning.osscar.utils.osscar_sparsify import sparsify_weight
 
 DEV = "cuda:0" if torch.cuda.is_available() else "cpu"
 
