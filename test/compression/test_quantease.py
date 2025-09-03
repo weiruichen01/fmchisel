@@ -5,8 +5,9 @@ from compressed_tensors.quantization.quant_args import (
     QuantizationStrategy,
     QuantizationType,
 )
-from fmchisel.quantization.quantease.utils.quantease_quantize import quantize_module
 from utils import DummyNetwork, get_all_quantization_parameters, get_quant_args
+
+from fmchisel.quantization.quantease.utils.quantease_quantize import quantize_module
 
 DEV = "cuda:0" if torch.cuda.is_available() else "cpu"
 

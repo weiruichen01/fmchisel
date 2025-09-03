@@ -1,7 +1,8 @@
+from llmcompressor.modifiers.factory import ModifierFactory
+
 from fmchisel.pruning.alps.base import ALPSModifier
 from fmchisel.pruning.osscar.base import OSSCARModifier
 from fmchisel.quantization.quantease.base import QuantEaseModifier
-from llmcompressor.modifiers.factory import ModifierFactory
 
 
 def test_alps_modifier():
