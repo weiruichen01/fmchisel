@@ -1,5 +1,6 @@
 from llmcompressor.modifiers.factory import ModifierFactory
 
+import fmchisel  # noqa: F401
 from fmchisel.pruning.alps.base import ALPSModifier
 from fmchisel.pruning.osscar.base import OSSCARModifier
 from fmchisel.quantization.quantease.base import QuantEaseModifier
